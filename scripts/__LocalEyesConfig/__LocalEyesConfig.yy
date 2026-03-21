@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LocalEyesConfig",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LocalEyesConfig",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/LocalEyes/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LEImport",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LEImport",
+  "parent":{
+    "name":"LocalEyes",
+    "path":"folders/LocalEyes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

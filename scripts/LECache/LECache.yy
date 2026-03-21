@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LECache",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LECache",
+  "parent":{
+    "name":"LocalEyes",
+    "path":"folders/LocalEyes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

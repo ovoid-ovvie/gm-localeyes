@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LECore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LECore",
+  "parent":{
+    "name":"LocalEyes",
+    "path":"folders/LocalEyes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
