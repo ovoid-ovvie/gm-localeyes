@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LECache",
+  "%Name":"__LEVar",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LECache",
+  "name":"__LEVar",
   "parent":{
-    "name":"LocalEyes",
-    "path":"folders/LocalEyes.yy",
+    "name":"(System)",
+    "path":"folders/LocalEyes/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

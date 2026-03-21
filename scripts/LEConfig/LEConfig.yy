@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LECore",
+  "%Name":"LEConfig",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LECore",
+  "name":"LEConfig",
   "parent":{
     "name":"LocalEyes",
     "path":"folders/LocalEyes.yy",

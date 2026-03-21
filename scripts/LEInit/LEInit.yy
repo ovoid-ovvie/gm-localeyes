@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LEDraw",
+  "%Name":"LEInit",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LEDraw",
+  "name":"LEInit",
   "parent":{
-    "name":"LocalEyes",
-    "path":"folders/LocalEyes.yy",
+    "name":"Core",
+    "path":"folders/LocalEyes/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
