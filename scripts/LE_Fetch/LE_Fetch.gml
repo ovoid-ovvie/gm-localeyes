@@ -1,7 +1,8 @@
-/// @desc Fetches a localised string by key name or string content. Supports dot-notation for nested keys.
+/// @desc Fetches a localised string by key name or string content. Supports dot-notation for nested keys. Optionally replaces {token} placeholders with values from a struct.
 /// @param {String} lookup Key name, dot-notation path, or string content to look up.
+/// @param {Struct} [replacements] Optional struct of token replacements e.g. { name: "John" } replaces {name} in the string.
 /// @return {String} The localised string.
-function leyes_fetch(lookup)
+function leyes_fetch(lookup, replacements = undefined)
 {
     var undefinedStrPassed = false;
     var str;
@@ -34,6 +35,21 @@ function leyes_fetch(lookup)
         else
         {
             __leyes_throw_error(LEYES_ERROR.GENERAL_DB);
+        }
+    }
+
+    if ( !is_undefined(replacements) )
+    {
+        var rNames = variable_struct_get_names(replacements);
+        for ( var i = 0; i < array_length(rNames); i++ )
+        {
+            var rKey = rNames[i];
+            var token = "{" + rKey + "}";
+            if ( string_count(token, str) == 0 )
+            {
+                __leyes_throw_error(LEYES_ERROR.FETCH_UNMATCHED_TOKEN);
+            }
+            str = string_replace_all(str, token, string(replacements[$ rKey]));
         }
     }
 

@@ -20,7 +20,7 @@ var test = method(self, function(name, result, expected)
 });
 
 // =============================================
-// 1. INITIALISATION (verify config ran correctly)
+// 1. INITIALISATION
 // =============================================
 show_debug_message("--- Initialisation ---");
 
@@ -49,21 +49,21 @@ test("Nested key fetch 2",           leyes_fetch("ui.quit"), "Quit");
 // =============================================
 show_debug_message("--- Fetch: Content ---");
 
-test("Content fetch flat",           leyes_fetch("Hello"),   "Hello");
-test("Content fetch nested",         leyes_fetch("Play"),    "Play");
+test("Content fetch flat",           leyes_fetch("Hello"),  "Hello");
+test("Content fetch nested",         leyes_fetch("Play"),   "Play");
 
 // =============================================
-// 5. DRAW (verify config set draw correctly)
+// 5. DRAW
 // =============================================
 show_debug_message("--- Draw ---");
 
 var draw = leyes_get_draw();
-test("Draw struct exists",           !is_undefined(draw),    true);
-test("Draw font set",                draw.font,              -1);
-test("Draw halign set",              draw.halign,            fa_left);
-test("Draw valign set",              draw.valign,            fa_top);
-test("Draw sep set",                 draw.sep,               -1);
-test("Draw width set",               draw.width,             -1);
+test("Draw struct exists",           !is_undefined(draw),   true);
+test("Draw font set",                draw.font,             -1);
+test("Draw halign set",              draw.halign,           fa_left);
+test("Draw valign set",              draw.valign,           fa_top);
+test("Draw sep set",                 draw.sep,              -1);
+test("Draw width set",               draw.width,            -1);
 
 // =============================================
 // 6. FETCH — fallback
@@ -76,18 +76,27 @@ test("Key in fr",                    leyes_fetch("greeting"), "Bonjour");
 test("Fallback for missing key",     leyes_fetch("ui.quit"),  "Quit");
 
 // =============================================
-// 7. IMPORT AND CACHE
+// 7. FETCH — string replacement
+// =============================================
+show_debug_message("--- Fetch: String Replacement ---");
+
+leyes_switch("en");
+test("String replacement",           leyes_fetch("greeting_name", { name: "John" }), "Hello, John!");
+test("Multiple replacements",        leyes_fetch("greeting_name", { name: "John", unused: "token" }), "Hello, John!"); // unused fires nonfatal [3.4]
+test("No replacements",              leyes_fetch("greeting_name"), "Hello, {name}!");
+
+// =============================================
+// 8. IMPORT AND CACHE
 // =============================================
 show_debug_message("--- Import and Cache ---");
 
-leyes_switch("en");
 leyes_import("fr");
 test("Language cached after import", variable_struct_exists(global.leyes.cache, "fr"), true);
 leyes_import("fr");
 test("Duplicate import skipped",     variable_struct_exists(global.leyes.cache, "fr"), true);
 
 // =============================================
-// 8. SWITCH
+// 9. SWITCH
 // =============================================
 show_debug_message("--- Switch ---");
 
@@ -96,10 +105,10 @@ test("Switched to fr",               global.leyes.lang,      "fr");
 test("fr removed from cache",        variable_struct_exists(global.leyes.cache, "fr"), false);
 test("en cached after switch",       variable_struct_exists(global.leyes.cache, "en"), true);
 leyes_switch("fr");
-test("Same language switch ignored", global.leyes.lang,      "fr");
+test("Same language switch ignored", global.leyes.lang,       "fr");
 
 // =============================================
-// 9. RESET
+// 10. RESET
 // =============================================
 show_debug_message("--- Reset ---");
 

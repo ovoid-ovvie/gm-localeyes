@@ -13,6 +13,7 @@ enum LEYES_ERROR
 	FETCH_FAIL_FALLBACK,
 	FETCH_FAIL_NO_FALLBACK,
 	FETCH_FAIL_BAD_FALLBACK,
+	FETCH_UNMATCHED_TOKEN,
 	DRAW_NO_DRAW,
 }
 
@@ -81,6 +82,10 @@ function __leyes_throw_error(err)
 		case LEYES_ERROR.FETCH_FAIL_BAD_FALLBACK:
 			show_error("LocalEyes fatal [3.3]: Key not found, fallback unsuccessful (invalid database)", true);
 			break;
+		
+		case LEYES_ERROR.FETCH_UNMATCHED_TOKEN:
+    		show_debug_message("LocalEyes nonfatal [3.4]: Unmatched token in string replacement");
+    		break;
 		#endregion
 
 		#region Draw
