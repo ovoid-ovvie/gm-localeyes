@@ -32,17 +32,17 @@ The standout feature is **content fetching**, which lets you look up a string by
 
 ## Getting Started
 
-See the [Setup](docs/Setup.md) page to get LocalEyes integrated into your project.
+See the [Setup](Docs/Setup.md) page to get LocalEyes integrated into your project.
 
 ---
 
 ## Documentation
 
-- [Setup](docs/Setup.md)
-- [Language Files](docs/Language-Files.md)
-- [Fetching Strings](docs/Fetching-Strings.md)
-- [Draw Management](docs/Draw-Management.md)
-- [Language Switching](docs/Language-Switching.md)
-- [Content Fetching](docs/Content-Fetching.md)
-- [Error Reference](docs/Error-Reference.md)
-- [API Reference](docs/API-Reference.md)
+- [Setup](Docs/Setup.md)
+- [Language Files](Docs/Language-Files.md)
+- [Fetching Strings](Docs/Fetching-Strings.md)
+- [Draw Management](Docs/Draw-Management.md)
+- [Language Switching](Docs/Language-Switching.md)
+- [Content Fetching](Docs/Content-Fetching.md)
+- [Error Reference](Docs/Error-Reference.md)
+- [API Reference](Docs/API-Reference.md)
