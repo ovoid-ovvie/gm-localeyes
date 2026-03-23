@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LE_Var",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LE_Var",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/LocalEyes/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

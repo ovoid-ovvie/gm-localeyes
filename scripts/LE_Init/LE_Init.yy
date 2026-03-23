@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__LEVar",
+  "%Name":"LE_Init",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__LEVar",
+  "name":"LE_Init",
   "parent":{
-    "name":"(System)",
-    "path":"folders/LocalEyes/(System).yy",
+    "name":"Core",
+    "path":"folders/LocalEyes/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

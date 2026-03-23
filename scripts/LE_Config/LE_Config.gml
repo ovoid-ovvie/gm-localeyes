@@ -1,0 +1,2 @@
+#macro LEYES_FILEPATH_BEGIN "lang/"
+#macro LEYES_FILEPATH_END   ""

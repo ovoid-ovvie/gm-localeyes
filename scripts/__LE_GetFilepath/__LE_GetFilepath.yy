@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LEConfig",
+  "%Name":"__LE_GetFilepath",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LEConfig",
+  "name":"__LE_GetFilepath",
   "parent":{
-    "name":"LocalEyes",
-    "path":"folders/LocalEyes.yy",
+    "name":"(System)",
+    "path":"folders/LocalEyes/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

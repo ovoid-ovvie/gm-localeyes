@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__LE_ParseJSON",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__LE_ParseJSON",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/LocalEyes/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

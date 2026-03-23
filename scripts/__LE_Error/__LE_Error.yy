@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LEInit",
+  "%Name":"__LE_Error",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LEInit",
+  "name":"__LE_Error",
   "parent":{
-    "name":"Core",
-    "path":"folders/LocalEyes/Core.yy",
+    "name":"(System)",
+    "path":"folders/LocalEyes/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
