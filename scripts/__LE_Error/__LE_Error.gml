@@ -7,6 +7,7 @@ enum LEYES_ERROR
 	CONFIG_NO_LANG,
 	CONFIG_NO_FBK,
 	CONFIG_NEITHER,
+	CONFIG_CONTENT_FETCH,
 	FILE_NOT_FOUND,
 	FILE_BAD_PARSE,
 	FILE_EMPTY,
@@ -44,6 +45,10 @@ function __leyes_throw_error(err)
 		
 		case LEYES_ERROR.CONFIG_NEITHER:
 			show_error("LocalEyes fatal [1.4]: Initialisation contains empty arguments (neither language nor fallback language set)", true);
+			break;
+		
+		case LEYES_ERROR.CONFIG_CONTENT_FETCH:
+			show_debug_message("LocalEyes nonfatal [1.5]: Error occured while creating data for content fetching, initialisation will proceed without this feature");
 			break;
 		#endregion
 		

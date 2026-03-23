@@ -1,4 +1,4 @@
-global.__leyes =
+global.leyes =
 {
 	isInit     : false,
 	lang       : "",

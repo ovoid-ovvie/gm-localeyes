@@ -1,3 +1,5 @@
+/// @desc Helper function to parse language files.
+/// @param {String} filename
 function __leyes_parse_json(filename)
 {
 	// Create buffer for file
