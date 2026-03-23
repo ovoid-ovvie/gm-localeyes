@@ -16,7 +16,7 @@
 // Set the first argument to the main language you want to load, and
 // the second to the fallback language you want to load. This is
 // required before running.
-leyes_init("", "");
+leyes_init("en", "fr");
 
 // Main language draw parameters. Change them to what you want.
 leyes_set_draw

@@ -1,0 +1,9 @@
+{
+    "greeting": "Hello",
+    "farewell": "Goodbye",
+    "ui": {
+        "play": "Play",
+        "quit": "Quit"
+    },
+    "long_string": "This string is intentionally longer than sixty four characters to test exclusion"
+}

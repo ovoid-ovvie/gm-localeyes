@@ -8,6 +8,16 @@ function leyes_import(lang)
 	var langFile = __leyes_get_filepath(langCode);
 	var strings = __leyes_parse_json(langFile);
 	
+	try
+	{
+		global.leyes.cache[$ langCode] = { key:{}, content:{} };
+	}
+	catch (_)
+	{
+		show_debug_message(_);
+		__leyes_throw_error(LEYES_ERROR.GENERAL_DB);
+	}
+	
     // Process content fetching
 	var macroPassed = false;
 	try

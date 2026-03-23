@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LE_Import",
   "parent":{
-    "name":"Import",
-    "path":"folders/LocalEyes/Import.yy",
+    "name":"Core",
+    "path":"folders/LocalEyes/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -15,7 +15,9 @@ function __leyes_lookup(loc, str)
         {
             if ( variable_struct_names_count(loc.content) > 0 )
             {
-                lookup = loc.key[$ loc.content[$ str]];
+                var contentKey = loc.content[$ str];
+                if ( is_undefined(contentKey) ) return undefined;
+                lookup = __leyes_lookup(loc, contentKey);
                 if ( is_undefined(lookup) ) return undefined;
                 break;
             }

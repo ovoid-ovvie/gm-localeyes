@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LE_Switch",
   "parent":{
-    "name":"Language",
-    "path":"folders/LocalEyes/Language.yy",
+    "name":"Core",
+    "path":"folders/LocalEyes/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

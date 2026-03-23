@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"LE_Fetch",
   "parent":{
-    "name":"String",
-    "path":"folders/LocalEyes/String.yy",
+    "name":"Core",
+    "path":"folders/LocalEyes/Core.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
