@@ -18,7 +18,7 @@ See [Language Files](Language-Files.md) for how to structure them.
 
 ## 3. Configure LE_Config
 
-Open `LE_Config` and fill in the two required fields:
+Open [`LE_Config`](../LocalEyes/LE_Config/LE_Config.gml) and fill in the two required fields:
 
 ```gml
 leyes_init("en", "fr"); // main language, fallback language

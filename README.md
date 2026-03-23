@@ -32,39 +32,17 @@ The standout feature is **content fetching**, which lets you look up a string by
 
 ## Getting Started
 
-See the [Setup](Setup.md) page to get LocalEyes integrated into your project.
+See the [Setup](docs/Setup.md) page to get LocalEyes integrated into your project.
 
 ---
 
-## Pages
+## Documentation
 
-- [Setup](Setup.md)
-- [Language Files](Language-Files.md)
-- [Fetching Strings](Fetching-Strings.md)
-- [Draw Management](Draw-Management.md)
-- [Language Switching](Language-Switching.md)
-- [Content Fetching](Content-Fetching.md)
-- [Error Reference](Error-Reference.md)
-- [API Reference](API-Reference.md)
-
-## Scripts
-
-**Public**
-- [LE_Config](../LocalEyes/LE_Config/LE_Config.gml)
-- [LE_Fetch](../LocalEyes/LE_Fetch/LE_Fetch.gml)
-- [LE_Import](../LocalEyes/LE_Import/LE_Import.gml)
-- [LE_Init](../LocalEyes/LE_Init/LE_Init.gml)
-- [LE_Reset](../LocalEyes/LE_Reset/LE_Reset.gml)
-- [LE_Switch](../LocalEyes/LE_Switch/LE_Switch.gml)
-- [LE_ApplyDraw](../LocalEyes/LE_ApplyDraw/LE_ApplyDraw.gml)
-- [LE_GetDraw](../LocalEyes/LE_GetDraw/LE_GetDraw.gml)
-- [LE_ResetDraw](../LocalEyes/LE_ResetDraw/LE_ResetDraw.gml)
-- [LE_SetDraw](../LocalEyes/LE_SetDraw/LE_SetDraw.gml)
-
-**Internal**
-- [__LE_Error](../LocalEyes/__LE_Error/__LE_Error.gml)
-- [__LE_GetFilepath](../LocalEyes/__LE_GetFilepath/__LE_GetFilepath.gml)
-- [__LE_Lookup](../LocalEyes/__LE_Lookup/__LE_Lookup.gml)
-- [__LE_ParseJSON](../LocalEyes/__LE_ParseJSON/__LE_ParseJSON.gml)
-- [__LE_ProcessContent](../LocalEyes/__LE_ProcessContent/__LE_ProcessContent.gml)
-- [__LE_Var](../LocalEyes/__LE_Var/__LE_Var.gml)
+- [Setup](docs/Setup.md)
+- [Language Files](docs/Language-Files.md)
+- [Fetching Strings](docs/Fetching-Strings.md)
+- [Draw Management](docs/Draw-Management.md)
+- [Language Switching](docs/Language-Switching.md)
+- [Content Fetching](docs/Content-Fetching.md)
+- [Error Reference](docs/Error-Reference.md)
+- [API Reference](docs/API-Reference.md)

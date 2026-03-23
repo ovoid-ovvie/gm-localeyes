@@ -8,7 +8,7 @@ All public functions are prefixed with `leyes_`. Internal functions are prefixed
 
 ---
 
-## leyes_init(lang, fallback_lang)
+## [leyes_init(lang, fallback_lang)](../LocalEyes/LE_Init/LE_Init.gml)
 
 Initialises the LocalEyes framework. This is called automatically by `LE_Config` and should not need to be called manually except via `leyes_reset()`.
 
@@ -21,7 +21,7 @@ Both arguments are required and must not be empty strings.
 
 ---
 
-## leyes_fetch(lookup, [replacements])
+## [leyes_fetch(lookup, [replacements])](../LocalEyes/LE_Fetch/LE_Fetch.gml)
 
 Fetches a localised string. Supports key names, dot-notation paths, and content-based lookup. Falls back to the fallback language if the key is not found in the active language.
 
@@ -43,7 +43,7 @@ See [Fetching Strings](Fetching-Strings.md) for full details.
 
 ---
 
-## leyes_import(lang)
+## [leyes_import(lang)](../LocalEyes/LE_Import/LE_Import.gml)
 
 Loads a language file and adds it to the cache. Does nothing if the language is already cached.
 
@@ -53,7 +53,7 @@ Loads a language file and adds it to the cache. Does nothing if the language is 
 
 ---
 
-## leyes_switch(lang)
+## [leyes_switch(lang)](../LocalEyes/LE_Switch/LE_Switch.gml)
 
 Switches the active language. Imports the language if it is not already cached. If the language being switched to is the current fallback language, the main and fallback languages swap places.
 
@@ -65,7 +65,7 @@ Does nothing if the language being switched to is already the active language.
 
 ---
 
-## leyes_reset(lang, fallback_lang)
+## [leyes_reset(lang, fallback_lang)](../LocalEyes/LE_Reset/LE_Reset.gml)
 
 Resets the LocalEyes framework completely and reinitialises it with new languages. Clears the cache, draw parameters, and all stored strings.
 
@@ -76,7 +76,7 @@ Resets the LocalEyes framework completely and reinitialises it with new language
 
 ---
 
-## leyes_set_draw(lang, font, halign, valign, sep, width)
+## [leyes_set_draw(lang, font, halign, valign, sep, width)](../LocalEyes/LE_SetDraw/LE_SetDraw.gml)
 
 Sets draw parameters for a language.
 
@@ -91,7 +91,7 @@ Sets draw parameters for a language.
 
 ---
 
-## leyes_apply_draw([lang])
+## [leyes_apply_draw([lang])](../LocalEyes/LE_ApplyDraw/LE_ApplyDraw.gml)
 
 Applies the draw parameters for the current or specified language. Sets font, halign, and valign. Falls back to the fallback language's draw parameters if none are found for the specified language.
 
@@ -101,13 +101,13 @@ Applies the draw parameters for the current or specified language. Sets font, ha
 
 ---
 
-## leyes_reset_draw()
+## [leyes_reset_draw()](../LocalEyes/LE_ResetDraw/LE_ResetDraw.gml)
 
 Resets draw parameters to the defaults defined in `LE_Config` via `LEYES_FONT`, `LEYES_HALIGN`, and `LEYES_VALIGN`.
 
 ---
 
-## leyes_get_draw()
+## [leyes_get_draw()](../LocalEyes/LE_GetDraw/LE_GetDraw.gml)
 
 Returns the draw parameters struct for the current language.
 
