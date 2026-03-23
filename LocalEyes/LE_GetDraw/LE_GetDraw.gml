@@ -1,4 +1,5 @@
 /// @desc Returns the draw parameters struct for the current language.
+/// @url https://github.com/ovoid-ovvie/LocalEyes/blob/Release/Docs/API-Reference.md
 /// @return {Struct} Draw parameters struct.
 function leyes_get_draw()
 {

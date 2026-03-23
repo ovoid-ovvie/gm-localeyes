@@ -1,4 +1,5 @@
 /// @desc Imports and caches a language file. Skips if already cached.
+/// @url https://github.com/ovoid-ovvie/LocalEyes/blob/Release/Docs/API-Reference.md
 /// @param {String} lang Language code to import.
 function leyes_import(lang)
 {

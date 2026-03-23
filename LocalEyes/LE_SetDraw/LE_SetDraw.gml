@@ -1,4 +1,5 @@
 /// @desc Sets draw parameters for a language.
+/// @url https://github.com/ovoid-ovvie/LocalEyes/blob/Release/Docs/API-Reference.md
 /// @param {String} lang Language code to set draw parameters for.
 /// @param {Asset.GMFont} font Font asset to use.
 /// @param {Constant.HAlign} halign Horizontal alignment.

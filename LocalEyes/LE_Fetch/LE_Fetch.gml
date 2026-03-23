@@ -1,4 +1,5 @@
 /// @desc Fetches a localised string by key name or string content. Supports dot-notation for nested keys. Optionally replaces {token} placeholders with values from a struct.
+/// @url https://github.com/ovoid-ovvie/LocalEyes/blob/Release/Docs/API-Reference.md
 /// @param {String} lookup Key name, dot-notation path, or string content to look up.
 /// @param {Struct} [replacements] Optional struct of token replacements e.g. { name: "John" } replaces {name} in the string.
 /// @return {String} The localised string.

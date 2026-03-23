@@ -1,4 +1,5 @@
 /// @desc Switches the active language. Imports the language if not already cached. If the language being switched to is the current fallback language, the main and fallback languages swap places.
+/// @url https://github.com/ovoid-ovvie/LocalEyes/blob/Release/Docs/API-Reference.md
 /// @param {String} lang Language code to switch to.
 function leyes_switch(lang)
 {
