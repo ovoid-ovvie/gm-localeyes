@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LE_Config",
+  "%Name":"LE_Import",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LE_Config",
+  "name":"LE_Import",
   "parent":{
-    "name":"Core",
-    "path":"folders/LocalEyes/Core.yy",
+    "name":"Import",
+    "path":"folders/LocalEyes/Import.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

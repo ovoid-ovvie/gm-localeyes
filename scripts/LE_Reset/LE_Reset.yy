@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"LE_Config",
+  "%Name":"LE_Reset",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LE_Config",
+  "name":"LE_Reset",
   "parent":{
     "name":"Core",
     "path":"folders/LocalEyes/Core.yy",

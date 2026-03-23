@@ -29,8 +29,10 @@ function leyes_init(lang, fallback_lang)
 		if ( LEYES_CONTENT_FETCH_TOGGLE )
 		{
 			macroPassed = true;
-			__leyes_process_content(strings, global.leyes.strings.content);
-			__leyes_process_content(fbkStrings, global.leyes.fbkStrings.content);
+			var excludedCount = __leyes_process_content(strings, global.leyes.strings.content);
+			var fbkExcludedCount = __leyes_process_content(fbkStrings, global.leyes.fbkStrings.content);
+			show_debug_message($"LocalEyes: {excludedCount} strings excluded from main content fetch.");
+			show_debug_message($"LocalEyes: {fbkExcludedCount} strings excluded from fallback content fetch.");
 		}
 	}
 	catch (_)
@@ -58,11 +60,6 @@ function leyes_init(lang, fallback_lang)
 		global.leyes.strings.key = strings;
 		global.leyes.fbkLang = fbkLangCode;
 		global.leyes.fbkStrings.key = fbkStrings;
-		global.leyes.cache[$ langCode] = variable_clone(global.leyes.strings);
-		if ( fbkLangCode != langCode )
-		{
-			global.leyes.cache[$ fbkLangCode] = variable_clone(global.leyes.fbkStrings);
-		}
 	}
 	catch (_)
 	{

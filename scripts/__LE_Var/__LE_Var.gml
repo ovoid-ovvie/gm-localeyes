@@ -1,13 +1,15 @@
-global.leyes =
+function __leyes_framework() constructor
 {
-	isInit     : false,
-	lang       : "",
+	isInit     = false;
+	lang       = "";
 	
-	strings    : { key:{}, content:{} },
-	draw       : {},
+	strings    = { key:{}, content:{} };
+	draw       = {};
 	
-	fbkLang    : "",
-	fbkStrings : { key:{}, content:{} },
+	fbkLang    = "";
+	fbkStrings = { key:{}, content:{} };
 	
-	cache      : {}
+	cache      = {};
 }
+
+global.leyes = new __leyes_framework();
