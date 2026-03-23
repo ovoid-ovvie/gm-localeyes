@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LE_Fetch",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LE_Fetch",
+  "parent":{
+    "name":"String",
+    "path":"folders/LocalEyes/String.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

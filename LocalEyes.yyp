@@ -2,7 +2,7 @@
   "$GMProject":"v1",
   "%Name":"LocalEyes",
   "AudioGroups":[
-    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -45,9 +45,12 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"__LE_Error","path":"scripts/__LE_Error/__LE_Error.yy",},},
     {"id":{"name":"__LE_GetFilepath","path":"scripts/__LE_GetFilepath/__LE_GetFilepath.yy",},},
+    {"id":{"name":"__LE_Lookup","path":"scripts/__LE_Lookup/__LE_Lookup.yy",},},
     {"id":{"name":"__LE_ParseJSON","path":"scripts/__LE_ParseJSON/__LE_ParseJSON.yy",},},
+    {"id":{"name":"__LE_ProcessContent","path":"scripts/__LE_ProcessContent/__LE_ProcessContent.yy",},},
     {"id":{"name":"__LE_Var","path":"scripts/__LE_Var/__LE_Var.yy",},},
     {"id":{"name":"LE_Config","path":"scripts/LE_Config/LE_Config.yy",},},
+    {"id":{"name":"LE_Fetch","path":"scripts/LE_Fetch/LE_Fetch.yy",},},
     {"id":{"name":"LE_Init","path":"scripts/LE_Init/LE_Init.yy",},},
   ],
   "resourceType":"GMProject",

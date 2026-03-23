@@ -1,9 +1,8 @@
 enum LEYES_ERROR
 {
-	OK,
 	GENERAL_NOT_INIT,
 	GENERAL_BAD_MACRO,
-	CONFIG_DB,
+	GENERAL_DB,
 	CONFIG_NO_LANG,
 	CONFIG_NO_FBK,
 	CONFIG_NEITHER,
@@ -28,27 +27,27 @@ function __leyes_throw_error(err)
 		case LEYES_ERROR.GENERAL_BAD_MACRO:
 			show_error("LocalEyes fatal [0.2]: Invalid macro", true);
 			break;
+		
+		case LEYES_ERROR.GENERAL_DB:
+			show_error("LocalEyes fatal [0.3]: Invalid database", true);
+			break;
 		#endregion
 		
 		#region Config
-		case LEYES_ERROR.CONFIG_DB:
-			show_error("LocalEyes fatal [1.1]: Global database is incorrectly configured", true);
-			break;
-		
 		case LEYES_ERROR.CONFIG_NO_LANG:
-			show_error("LocalEyes fatal [1.2]: Initialisation contains empty argument (language not set)", true);
+			show_error("LocalEyes fatal [1.1]: Initialisation contains empty argument (language not set)", true);
 			break;
 		
 		case LEYES_ERROR.CONFIG_NO_FBK:
-			show_error("LocalEyes fatal [1.3]: Initialisation contains empty argument (fallback language not set)", true);
+			show_error("LocalEyes fatal [1.2]: Initialisation contains empty argument (fallback language not set)", true);
 			break;
 		
 		case LEYES_ERROR.CONFIG_NEITHER:
-			show_error("LocalEyes fatal [1.4]: Initialisation contains empty arguments (neither language nor fallback language set)", true);
+			show_error("LocalEyes fatal [1.3]: Initialisation contains empty arguments (neither language nor fallback language set)", true);
 			break;
 		
 		case LEYES_ERROR.CONFIG_CONTENT_FETCH:
-			show_debug_message("LocalEyes nonfatal [1.5]: Error occured while creating data for content fetching, initialisation will proceed without this feature");
+			show_debug_message("LocalEyes nonfatal [1.4]: Error occured while creating data for content fetching, initialisation will proceed without this feature");
 			break;
 		#endregion
 		

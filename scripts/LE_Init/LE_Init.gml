@@ -29,45 +29,18 @@ function leyes_init(lang, fallback_lang)
 		if ( LEYES_CONTENT_FETCH_TOGGLE )
 		{
 			macroPassed = true;
-
-			// Main language
-			var names = variable_struct_get_names(strings);
-			var excludedCount = 0;
-			for (var i = 0; i < array_length(names); i++)
-			{
-				var key = names[i];
-				var content = strings[$ names[i]];
-				if ( string_length(content) > LEYES_CONTENT_FETCH_LENGTH_LIMIT )
-				{
-					excludedCount++;
-					continue;
-				}
-				global.leyes.strings.content[$ content] = key;
-			}
-			show_debug_message($"LocalEyes: {excludedCount} strings excluded from main content fetch.");
-
-			// Fallback language
-			var fbkNames = variable_struct_get_names(fbkStrings);
-			var fbkExcludedCount = 0;
-			for (var i = 0; i < array_length(fbkNames); i++)
-			{
-				var fbkKey = fbkNames[i];
-				var fbkContent = fbkStrings[$ fbkNames[i]];
-				if ( string_length(fbkContent) > LEYES_CONTENT_FETCH_LENGTH_LIMIT )
-				{
-					fbkExcludedCount++;
-					continue;
-				}
-				global.leyes.fbkStrings.content[$ fbkContent] = fbkKey;
-			}
-			show_debug_message($"LocalEyes: {fbkExcludedCount} strings excluded from fallback content fetch.");
+			__leyes_process_content(strings, global.leyes.strings.content);
+			__leyes_process_content(fbkStrings, global.leyes.fbkStrings.content);
 		}
 	}
 	catch (_)
 	{
+		show_debug_message(_);
 		if ( macroPassed )
 		{
 			// Caught content fetch error
+			global.leyes.strings.content = {};
+    		global.leyes.fbkStrings.content = {};
 			__leyes_throw_error(LEYES_ERROR.CONFIG_CONTENT_FETCH);
 		}
 		else
@@ -95,6 +68,6 @@ function leyes_init(lang, fallback_lang)
 	{
 		// Catch invalid database
 		show_debug_message(_);
-		__leyes_throw_error(LEYES_ERROR.CONFIG_DB);
+		__leyes_throw_error(LEYES_ERROR.GENERAL_DB);
 	}
 }
