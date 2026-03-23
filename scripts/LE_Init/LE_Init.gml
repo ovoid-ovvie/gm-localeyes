@@ -22,26 +22,6 @@ function leyes_init(lang, fallback_lang)
 	var fbkLangFile = __leyes_get_filepath(fbkLangCode);
 	var fbkStrings = __leyes_parse_json(fbkLangFile);
 	
-	try // Initialise database
-	{
-		global.leyes.isInit = true;
-		global.leyes.lang = langCode;
-		global.leyes.strings.key = strings;
-		global.leyes.fbkLang = fbkLangCode;
-		global.leyes.fbkStrings.key = fbkStrings;
-		array_push(global.leyes.loaded, lang);
-		if ( !array_contains(global.leyes.loaded, fallback_lang) )
-		{
-			array_push(global.leyes.loaded, fallback_lang);
-		}
-	}
-	catch (_)
-	{
-		// Catch invalid database
-		show_debug_message(_);
-		__leyes_throw_error(LEYES_ERROR.CONFIG_DB);
-	}
-
 	// Process content fetching
 	var macroPassed = false;
 	try
@@ -96,5 +76,25 @@ function leyes_init(lang, fallback_lang)
 			show_debug_message("LocalEyes: LEYES_CONTENT_FETCH_TOGGLE is bad macro");
 			__leyes_throw_error(LEYES_ERROR.GENERAL_BAD_MACRO);
 		}
+	}
+
+	try // Initialise database
+	{
+		global.leyes.isInit = true;
+		global.leyes.lang = langCode;
+		global.leyes.strings.key = strings;
+		global.leyes.fbkLang = fbkLangCode;
+		global.leyes.fbkStrings.key = fbkStrings;
+		global.leyes.cache[$ langCode] = variable_clone(global.leyes.strings);
+		if ( fbkLangCode != langCode )
+		{
+			global.leyes.cache[$ fbkLangCode] = variable_clone(global.leyes.fbkStrings);
+		}
+	}
+	catch (_)
+	{
+		// Catch invalid database
+		show_debug_message(_);
+		__leyes_throw_error(LEYES_ERROR.CONFIG_DB);
 	}
 }

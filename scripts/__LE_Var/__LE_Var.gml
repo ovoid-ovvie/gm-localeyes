@@ -9,5 +9,5 @@ global.leyes =
 	fbkLang    : "",
 	fbkStrings : { key:{}, content:{} },
 	
-	loaded     : []
+	cache      : {}
 }
