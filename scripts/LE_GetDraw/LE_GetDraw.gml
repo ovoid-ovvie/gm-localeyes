@@ -1,3 +1,5 @@
+/// @desc Returns the draw parameters struct for the current language.
+/// @return {Struct} Draw parameters struct.
 function leyes_get_draw()
 {
     try

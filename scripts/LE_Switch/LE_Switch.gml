@@ -1,3 +1,5 @@
+/// @desc Switches the active language. Imports the language if not already cached.
+/// @param {String} lang Language code to switch to.
 function leyes_switch(lang)
 {
     if ( global.leyes.lang == lang ) return;
@@ -11,6 +13,7 @@ function leyes_switch(lang)
         }
         global.leyes.lang = lang;
         global.leyes.strings = global.leyes.cache[$ lang];
+        struct_remove(global.leyes.cache, lang);
     }
     catch (_)
     {

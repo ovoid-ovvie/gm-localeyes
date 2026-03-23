@@ -1,3 +1,8 @@
+/// @desc Recursively processes a strings struct and populates a flat content lookup struct. Returns the number of excluded strings.
+/// @param {Struct} strings Strings struct to process.
+/// @param {Struct} contentStruct Target struct to populate with content lookups.
+/// @return {Real} Number of strings excluded due to exceeding the length limit.
+/// @ignore
 function __leyes_process_content(strings, contentStruct)
 {
     var names = variable_struct_get_names(strings);

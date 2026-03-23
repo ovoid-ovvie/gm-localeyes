@@ -16,6 +16,9 @@ enum LEYES_ERROR
 	DRAW_NO_DRAW,
 }
 
+/// @desc Handles a LocalEyes error, either fatally via show_error or non-fatally via show_debug_message.
+/// @param {Enum.LEYES_ERROR} err Error enum value.
+/// @ignore
 function __leyes_throw_error(err)
 {
 	switch err

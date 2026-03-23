@@ -1,3 +1,8 @@
+/// @desc Looks up a string from a strings struct by key name, dot-notation path, or content.
+/// @param {Struct} loc Strings struct containing key and content substruct.
+/// @param {String} str Key name, dot-notation path, or string content to look up.
+/// @return {String} The found string, or undefined if not found.
+/// @ignore
 function __leyes_lookup(loc, str)
 {
     var lookup = loc.key;
@@ -10,7 +15,7 @@ function __leyes_lookup(loc, str)
         {
             if ( variable_struct_names_count(loc.content) > 0 )
             {
-                lookup = loc.content[$ str];
+                lookup = loc.key[$ loc.content[$ str]];
                 if ( is_undefined(lookup) ) return undefined;
                 break;
             }

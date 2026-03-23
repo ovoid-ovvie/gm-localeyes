@@ -1,3 +1,6 @@
+/// @desc Fetches a localised string by key name or string content. Supports dot-notation for nested keys.
+/// @param {String} lookup Key name, dot-notation path, or string content to look up.
+/// @return {String} The localised string.
 function leyes_fetch(lookup)
 {
     var undefinedStrPassed = false;

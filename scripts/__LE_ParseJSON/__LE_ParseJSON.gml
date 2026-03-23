@@ -1,5 +1,7 @@
-/// @desc Helper function to parse language files.
-/// @param {String} filename
+/// @desc Loads and parses a JSON language file into a struct.
+/// @param {String} filename Full filepath to the JSON file.
+/// @return {Struct} Parsed JSON struct.
+/// @ignore
 function __leyes_parse_json(filename)
 {
 	// Create buffer for file

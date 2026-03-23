@@ -8,7 +8,7 @@
 #macro LEYES_CONTENT_FETCH_TOGGLE       true // enable/disable content fetching
 #macro LEYES_CONTENT_FETCH_LENGTH_LIMIT 64   // exclude strings with more characters than this value (default 64)
 
-// Default draw parameters, edit them to be values you want
+// Default draw parameters. Change them to what you want.
 #macro LEYES_FONT -1
 #macro LEYES_HALIGN fa_left
 #macro LEYES_VALIGN fa_top

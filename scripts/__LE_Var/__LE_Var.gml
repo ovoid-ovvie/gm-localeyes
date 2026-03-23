@@ -1,3 +1,5 @@
+/// @desc Constructor for the LocalEyes global database struct.
+/// @ignore
 function __leyes_framework() constructor
 {
 	isInit     = false;

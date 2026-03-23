@@ -1,3 +1,10 @@
+/// @desc Sets draw parameters for a language.
+/// @param {String} lang Language code to set draw parameters for.
+/// @param {Asset.GMFont} font Font asset to use.
+/// @param {Constant.HAlign} halign Horizontal alignment.
+/// @param {Constant.VAlign} valign Vertical alignment.
+/// @param {Real} sep Line separation for draw_text_ext. Use -1 for default.
+/// @param {Real} width Maximum line width for draw_text_ext. Use -1 for no limit.
 function leyes_set_draw(lang, font, halign, valign, sep, width)
 {
     try

@@ -1,3 +1,5 @@
+/// @desc Applies the draw parameters for the current or specified language. Falls back to fallback language draw parameters if not found.
+/// @param {String} [lang] Language code to apply draw parameters for. Defaults to current language.
 function leyes_apply_draw(lang = undefined)
 {
     try

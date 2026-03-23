@@ -1,3 +1,5 @@
+/// @desc Imports and caches a language file. Skips if already cached.
+/// @param {String} lang Language code to import.
 function leyes_import(lang)
 {
 	if ( variable_struct_exists(global.leyes.cache, lang) ) return;
