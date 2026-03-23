@@ -6,17 +6,31 @@
 
 Getting LocalEyes running in a project takes about two minutes.
 
-## 1. Import the Scripts
+## 1. Download LocalEyes
+
+Go to the [Releases](../../../releases) page and download the latest `.yymps` file.
+
+## 2. Import into GameMaker
+
+There are two ways to import the package:
+
+**Drag and drop** -- drag the `.yymps` file directly onto the GameMaker IDE and it will open the import window automatically.
+
+**Tools menu** -- open your project in GameMaker, go to `Tools > Import Local Package`, and browse to the downloaded `.yymps` file.
+
+Either way, an import window will open showing the package contents. Click `Add All` to select everything, then click `Import`.
+
+## 3. Import the Scripts
 
 Copy the LocalEyes scripts folder into your GameMaker project. All scripts are self-contained and have no external dependencies.
 
-## 2. Create Your Language Files
+## 4. Create Your Language Files
 
 LocalEyes expects JSON files in a specific location. By default it looks for them at `lang/<code>.json`, so for English that would be `lang/en.json`.
 
 See [Language Files](Language-Files.md) for how to structure them.
 
-## 3. Configure LE_Config
+## 5. Configure LE_Config
 
 Open [`LE_Config`](../LocalEyes/LE_Config/LE_Config.gml) and fill in the two required fields:
 
@@ -68,7 +82,7 @@ leyes_set_draw
 )
 ```
 
-## 4. Done
+## 6. Done
 
 LocalEyes is now running. The config script executes automatically when the game starts. You can start calling `leyes_fetch()` from anywhere in your project.
 
