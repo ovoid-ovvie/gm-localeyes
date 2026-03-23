@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LE_Config",
+  "%Name":"LE_GetDraw",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LE_Config",
+  "name":"LE_GetDraw",
   "parent":{
-    "name":"LocalEyes",
-    "path":"folders/LocalEyes.yy",
+    "name":"Draw",
+    "path":"folders/LocalEyes/Draw.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"LE_Config",
+  "%Name":"LE_Switch",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"LE_Config",
+  "name":"LE_Switch",
   "parent":{
-    "name":"LocalEyes",
-    "path":"folders/LocalEyes.yy",
+    "name":"Language",
+    "path":"folders/LocalEyes/Language.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

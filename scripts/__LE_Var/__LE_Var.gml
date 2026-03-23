@@ -1,14 +1,14 @@
 function __leyes_framework() constructor
 {
 	isInit     = false;
+
 	lang       = "";
-	
 	strings    = { key:{}, content:{} };
-	draw       = {};
 	
 	fbkLang    = "";
 	fbkStrings = { key:{}, content:{} };
-	
+
+	draw       = {};
 	cache      = {};
 }
 
